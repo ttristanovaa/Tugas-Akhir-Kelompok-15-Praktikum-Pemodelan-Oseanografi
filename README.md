@@ -10,7 +10,7 @@ Repositori ini dibuat untuk memenuhi Tugas Akhir Praktikum Pemodelan Oseanografi
 7. Tanya Tristanova 26050120130042 Oseanografi A
 # MODUL 1 : Adveksi-Difusi 1 Dimensi
 bla bla bla
-# MODUL 2 : Adveksi-Difusi : 2 Dimensi
+# MODUL 2 : Adveksi-Difusi 2 Dimensi
 bla bla bla
 # MODUL 3 : Hidrodinamika 1 Dimensi
 bla bla bla
