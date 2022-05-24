@@ -6,7 +6,7 @@ Kelompok 15 :
 1. Anggi Indira Rayhanifa 26050120120012 Oseanografi A
 2. Christopher Agung Hutahaean 26050120130088 Oseanografi A
 3. Indra Romadhon 26050120140164 Oseanografi B
-4. Ismail Basayep Oseanografi B
+4. Ismail Basayep 26050120140146 Oseanografi B
 5. Muhamad Fadilah Nur Hafid Oseanografi B
 6. Nadhifa Az Zahra Oseanografi B
 7. Tanya Tristanova 26050120130042 Oseanografi A
