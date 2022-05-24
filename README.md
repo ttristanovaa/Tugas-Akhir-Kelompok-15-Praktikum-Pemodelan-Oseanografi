@@ -353,7 +353,7 @@ To = 500        #Periode
 
 ***
 # 👾 MODUL 4 : Model Data Gelombang _National Buoy Data Center_ (NDBC)
-Pada modul 4, kita perlu mengakses hasil pembagian Station_ID sesuai dengan NIM melalui website NDBC-NOAA dan menentukan serta menganalisis letak buoy. _National Data Buoy Center_ (NDBC) adalah bagian dari _National Oceanic and Atmospheric Administration_ (NOAA) _National Weather Service_ (NWS). Gelombang di laut memiliki pergerakan yang acak dan komplek, sehingga tinggi dan periode gelombang sulit untuk diukur dan dirumuskan secara akurat. Teknologi pemantauan gelombang laut telah berkembang selama 40 tahun terakhir. Wahana terapung seperti wave buoy telah digunakan secara luas di seluruh dunia untuk mengukur gelombang permukaan yaitu sebagai referensi atau validasi data ramalan. NDBC merancang, mengembangkan, mengoperasikan, dan memelihara jaringan pelampung pengumpul data dari stasiun yang ada di pesisir. Data parameter yang didapatkan di stasiun NDBC dapat digunakan salah satunya untuk mengetahui transportasi larva ikan pada suatu perairan. Selain itu juga dapat digunakan dalam penentuan daerah penangkapan ikan, penentuan navigasi, rute perjalanan kapal, dan lainnya. Grafik yang dihasilkan dari script modul 4 berupa Pressure [hPa], Wind Speed [m/s] dan Wind Direction [degC].
+Pada modul 4, kita perlu mengakses hasil pembagian Station_ID sesuai dengan NIM melalui website NDBC-NOAA dan menentukan serta menganalisis letak buoy. _National Data Buoy Center_ (NDBC) adalah bagian dari _National Oceanic and Atmospheric Administration_ (NOAA) _National Weather Service_ (NWS). Gelombang di laut memiliki pergerakan yang acak dan komplek, sehingga tinggi dan periode gelombang sulit untuk diukur dan dirumuskan secara akurat. Teknologi pemantauan gelombang laut telah berkembang selama 40 tahun terakhir. Wahana terapung seperti _wave buoy_ telah digunakan secara luas di seluruh dunia untuk mengukur gelombang permukaan yaitu sebagai referensi atau validasi data ramalan. NDBC merancang, mengembangkan, mengoperasikan, dan memelihara jaringan pelampung pengumpul data dari stasiun yang ada di pesisir. Data parameter yang didapatkan di stasiun NDBC dapat digunakan salah satunya untuk mengetahui transportasi larva ikan pada suatu perairan. Selain itu juga dapat digunakan dalam penentuan daerah penangkapan ikan, penentuan navigasi, rute perjalanan kapal, dan lainnya. Grafik yang dihasilkan dari script modul 4 berupa _Pressure_ [hPa], _Wind Speed_ [m/s] dan_ Wind Direction_ [degC].
 
 _Script_ :
 ```java
@@ -388,7 +388,7 @@ ax3.set_ylabel('Water Temperature [degC]')
 plt.show()
 ```
 
-> Stasiun pada script dapat dicari pada https://www.ndbc.noaa.gov/
+> Stasiun yang digunakan pada script dapat dicari pada https://www.ndbc.noaa.gov/
 
 # Hasil _Script_ Model Data Gelombang _National Buoy Data Center_ (NDBC)
 
@@ -399,11 +399,11 @@ plt.show()
 # Demikian Tugas Akhir Kelompok Praktikum Pemodelan Oseanografi ini kami buat, kami meminta maaf jika ada kesalahan dalam penulisan ataupun hasil script yang dibuat. Akhir kata kami ucapkan terima kasih kepada setiap orang yang terlibat dalam pembuatan tugas akhir ini. 👋👽
 
 ***
-# TAUTAN
+# Tautan
 1. Materi Adveksi - Difusi https://www.youtube.com/watch?v=UM0o0ToluY8&ab_channel=CasparHewett
 2. Panduan GitHub https://github.com/endymuhardin/buku-pandoc/blob/master/buku/02-markdown.md
 3. NDBC https://www.ndbc.noaa.gov/
-4. https://pypi.org/project/matplotlib/
-5. https://numpy.org/install/
-6. https://www.codegrepper.com/code-examples/shell/pip+install+sys
-7. https://unidata.github.io/siphon/latest/installguide.html
+4. Install Matplotlib https://pypi.org/project/matplotlib/
+5. Install NumPy https://numpy.org/install/
+6. Install sys https://www.codegrepper.com/code-examples/shell/pip+install+sys
+7. Install Siphon https://unidata.github.io/siphon/latest/installguide.html
