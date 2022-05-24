@@ -1,5 +1,5 @@
 # 🔹 **Tugas Akhir Praktikum Pemodelan Oseanografi** 🔹
-Repositori ini dibuat untuk memenuhi Tugas Akhir Praktikum Pemodelan Oseanografi. Repositori berisi _script_ pemrograman yang digunakan dalam praktikum yaitu Adveksi-Difusi 1 Dimensi, Adveksi-Difusi 2 Dimensi, Hidrodinamika 1 Dimensi, dan  Model Data Gelombang _National Buoy Data Center_ (NDBC). Bahasa pemrograman yang digunakan adalah _Python_ yang dapat diaplikasikan pada beberapa _platform_ seperti _Google Colaboratory_, _Visual Studio Code_ (VSC), dan _Jupyter Notebook_. _Library_ yang digunakan pada kesempatan kali ini adalah _Numpy_, _Matplotlib_, _sys_, dan _Siphon_.
+Repositori ini dibuat untuk memenuhi Tugas Akhir Praktikum Pemodelan Oseanografi. Repositori berisi _script_ pemrograman yang digunakan dalam praktikum yaitu Adveksi-Difusi 1 Dimensi, Adveksi-Difusi 2 Dimensi, Hidrodinamika 1 Dimensi, dan  Model Data Gelombang _National Buoy Data Center_ (NDBC). Bahasa pemrograman yang digunakan adalah _Python_ yang dapat diaplikasikan pada beberapa _platform_ seperti _Google Colaboratory_, _Visual Studio Code_ (VSCODE), dan _Jupyter Notebook_. _Library_ yang digunakan pada kesempatan kali ini adalah _Numpy_, _Matplotlib_, _sys_, dan _Siphon_.
 
 # Kenalan Dulu Yuk! 👋
 Kelompok 15 :
@@ -226,10 +226,41 @@ Ic = 542
 
 ***
 # 👾 MODUL 3 : Hidrodinamika 1 Dimensi
-Pada modul 3 dipelajari mengenai persamaan Hidrodinamika 1D. Hidrodinamika adalah ilmu yang mempelajari gerak fluida, khususnya zat cair yang tidak dapat ditekan (_incompressible liquid_) yang dipengaruhi oleh gaya eksternal dan internal. Gaya-gaya yang mempengaruhi pada laut meliputi gaya gravitasi, coriolis, dan sebagainya. Kondisi hidrodinamika merupakan salah satu aspek yang sangat berpengaruh terhadap proses - proses yang terjadi di pantai terutama gelombang dan arus yang bergantung pada bentuk dan karakteristik pantai. Pada praktikum ini persamaan yang digunakan untuk modul hidrodinamika adalah persamaan momentum dan persamaan kontinuitas.
+Pada modul 3 dipelajari mengenai persamaan Hidrodinamika 1D. Hidrodinamika adalah ilmu yang mempelajari gerak fluida, khususnya zat cair yang tidak dapat ditekan (_incompressible liquid_) yang dipengaruhi oleh gaya eksternal dan internal. Gaya-gaya yang mempengaruhi pada laut meliputi gaya gravitasi, coriolis, dan sebagainya. Kondisi hidrodinamika merupakan salah satu aspek yang sangat berpengaruh terhadap proses - proses yang terjadi di pantai terutama gelombang dan arus yang bergantung pada bentuk dan karakteristik pantai. Pada praktikum ini persamaan yang digunakan untuk modul hidrodinamika adalah 
+
+**Persamaan Momentum**:
+
+![image](https://user-images.githubusercontent.com/105988579/170135922-d64ef5fe-d2d7-43c3-a034-603607e649f2.png)
+
+**Persamaan Kontinuitas**:
+
+![image](https://user-images.githubusercontent.com/105988579/170135996-bc5e2aba-3040-4e79-98a8-eca941c17543.png)
+
+**Persamaan Transport**
+
+![image](https://user-images.githubusercontent.com/105988579/170137143-dcf52915-a45e-4863-b87e-deee639e2422.png)
+
+**Persamaan Pembangun**
+
+![image](https://user-images.githubusercontent.com/105988579/170137178-6299ad29-928b-48b4-87b8-8175ba2135af.png)
+
+![image](https://user-images.githubusercontent.com/105988579/170137201-e916fd76-b925-4e8f-bc51-81fe700f016f.png)
+
+**Diskretisasi Persamaan**
+
+![image](https://user-images.githubusercontent.com/105988579/170137390-9cf9cc1a-5693-4aae-859a-1f1303246e41.png)
+
+![image](https://user-images.githubusercontent.com/105988579/170137418-f358c0e5-e8b6-45ae-aefb-f32c83f5b1a1.png)
+
+**Penyelesaian Analitik**
+
+![image](https://user-images.githubusercontent.com/105988579/170137541-29424a4f-c14a-4cba-ae50-48328ff6e681.png)
+
+![image](https://user-images.githubusercontent.com/105988579/170137569-a398d37e-9406-4c6c-8469-4a0e142d2dc8.png)
+
 
 _Script_ :
-```java
+`'`java
 import matplotlib.pyplot as plt
 import numpy as np
 
