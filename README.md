@@ -397,7 +397,7 @@ plt.show()
 # Hasil _Script_ Model Data Gelombang _National Buoy Data Center_ (NDBC)
 
 ![image](https://user-images.githubusercontent.com/105962770/169971863-1a24c41e-7b19-4a4a-a1e5-d496011eb1b6.png)
-> Hasil dari _running script_ modul 4 dapat berbeda dengan fenomena yang terjadi sebenarnya (karena adanya anomali)
+> Hasil dari _running script_ modul 4 dapat berbeda dengan fenomena yang terjadi sebenarnya (karena adanya anomali), anomali tersebut menggambarkan salah satu parameter yang diukur yaitu kecepatan angin, dimana kecepatan angin merupakan salah satu faktor yang mempengaruhi kecepatan arus dan besar gelombang
 
 ***
 # Demikian Tugas Akhir Kelompok Praktikum Pemodelan Oseanografi ini kami buat, kami meminta maaf jika ada kesalahan dalam penulisan ataupun hasil script yang dibuat. Akhir kata kami ucapkan terima kasih kepada setiap orang yang terlibat dalam pembuatan tugas akhir ini. Byee 👋👽
