@@ -139,6 +139,8 @@ for n in range (0, Nt):
 # MODUL 3 : Hidrodinamika 1 Dimensi
 Pada modul 3 dipelajari mengenai persamaan Hidrodinamika 1D. Hidrodinamika adalah ilmu yang mempelajari gerak fluida, khususnya zat cair yang tidak dapat ditekan (incompressible liquid) yang dipengaruhi oleh gaya eksternal dan internal. Gaya-gaya yang mempengaruhi pada laut meliputi gaya gravitasi, coriolis, dan sebagainya. Kondisi hidrodinamika merupakan salah satu aspek yang sangat berpengaruh terhadap proses - proses yang terjadi di pantai terutama gelombang dan arus yang bergantung pada bentuk dan karakteristik pantai. Pada praktikum ini persamaan yang digunakan untuk modul hidrodinamika adalah persamaan momentum dan persamaan kontinuitas.
 
+`import numpy as np`
+
 # Hasil Pemodelan Modul 3
 
 # MODUL 4 : Model Data Gelombang National Buoy Data Center (NDBC)
