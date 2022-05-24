@@ -1,5 +1,6 @@
 # **Tugas Akhir Praktikum Pemodelan Oseanografi** 
 Repositori ini dibuat untuk memenuhi Tugas Akhir Praktikum Pemodelan Oseanografi. Repositori berisi _script_ pemrograman yang digunakan dalam praktikum yaitu Adveksi-Difusi 1 Dimensi, Adveksi-Difusi 2 Dimensi, Hidrodinamika 1 Dimensi, dan  Model Data Gelombang _National Buoy Data Center_ (NDBC). Bahasa pemrograman yang digunakan adalah _Python_ yang dapat diaplikasikan pada beberapa _platform_ seperti _Google Colaboratory_ dan _Jupyter Notebook_. _Library_ yang digunakan pada kesempatan kali ini adalah _Numpy_, _Matplotlib_, dan _Siphon_.
+
 # Kenalan Dulu Yuk! 👋
 Kelompok 15 :
 1. Anggi Indira Rayhanifa 26050120120012 Oseanografi A
@@ -9,13 +10,16 @@ Kelompok 15 :
 5. Muhamad Fadilah Nur Hafid Oseanografi B
 6. Nadhifa Az Zahra Oseanografi B
 7. Tanya Tristanova 26050120130042 Oseanografi A
-# **MODUL 1 : Adveksi-Difusi 1 Dimensi**
+
+***
+# 👾 MODUL 1 : Adveksi-Difusi 1 Dimensi
 Adveksi  - Difusi merupakan proses transportasi materi dari suatu bagian sistem ke bagian yang lain sebagai hasil dari gerakan molekul acak yang melibatkan proses transportasi fluida dalam bentuk aliran rata – rata atau arus yang dipengaruhi oleh gaya gravitasi atau tekanan dan merupakan gerak horizontal. Model adveksi - difusi dapat ditemukan dalam kehidupan sehari-hari seperti pencemaran sungai maupun kebakaran hutan. Adveksi - difusi merupakan suatu persamaan diferensial parsial. Solusi numerik dari Persamaan adveksi - difusi 1D dapat diselesaikan menggunakan Finite Difference Schemes standar dan non-standar. Metode yang dapat digunakan adalah metode _Backward in Time Central in Space_ (BTCS), metode _Forward in Time Central in Space_ (FTCS) dan terakhir metode Crank-Nicholson. 
-> Metode Crank-Nicholson mampu memprediksi hasil yang paling akurat disbanding metode lainnya.
+> Metode Crank-Nicholson mampu memprediksi hasil yang paling akurat dibanding dengan metode lainnya.
 
 * **Persamaan Adveksi Difusi** : Persamaan adveksi-difusi merupakan persamaan yang memuat sifat persamaan adveksi dan persamaa difusi. Persamaan adveksi merupakan suatu persamaan gelombang linear orde satu dan termasuk dalam persamaan diferensial hiperbolik yang menggambarkan mekanisme transportasi suatu gas atau zat cair dengan arah terntentu. Sedangkan persamaan difusi merupakan persamaan diferensial parsial yang merupakan persentasi perpindahan suatu zat dari konsentrasi tinggi ke konsentrasi rendah. Persamaan adveksi-difusi dapat dipahami dalam bentuk persamaan adveksi maupun persamaan difusi.
 
 Persamaan Adeveksi  : ![image](https://user-images.githubusercontent.com/105962770/169956549-b9cf729b-2b25-4f29-93ca-ab3b012f028c.png)
+
 Persamaan Difusi    : ![image](https://user-images.githubusercontent.com/105962770/169956718-6d899167-6010-487e-9416-c185bd008dbe.png)
 
 * **Persamaan Laplace**
@@ -26,7 +30,7 @@ Persamaan Difusi    : ![image](https://user-images.githubusercontent.com/1059627
 
 ![image](https://user-images.githubusercontent.com/105962770/169961236-01999f98-f4a6-4c0d-b85d-38aab798738a.png)
 
-* P**ersamaan Metode _Forward in Time Central in Space_ (FTCS)**
+* **Persamaan Metode _Forward in Time Central in Space_ (FTCS)**
 
 ![image](https://user-images.githubusercontent.com/105962770/169961366-1be6a05b-b3c1-41cc-b63a-21f22f6b68a4.png)
 
@@ -34,56 +38,51 @@ Persamaan Difusi    : ![image](https://user-images.githubusercontent.com/1059627
 
 ![image](https://user-images.githubusercontent.com/105962770/169961432-cb94e1d8-34af-49f7-9c84-4fea673e2d6f.png)
 
-# **MODUL 2 : Adveksi-Difusi 2 Dimensi**
+***
+# 👾 MODUL 2 : Adveksi-Difusi 2 Dimensi
 Persamaan Adveksi - Difusi 2 Dimensi sering juga dikenal dengan Persamaan Transportasi dengan berbagai syarat awal dan syarat batas dibahas dengan pendekatan numerik. Adveksi merupakan mekanisme perpindahan massa suatu materi dari satu titik ke titik lainnya. Sedangkan, difusi merupakan mekanisme penyebaran konsentrasi akibat adanya kecepatan aliran dan perbedaan konsentrasi. Persamaan Adveksi - Difusi 2D dapat digambarkan dalam persamaan di bawah ini:
 
 ![image](https://user-images.githubusercontent.com/105967038/169849733-06c4e7b0-d644-4002-aef7-2197624fb018.png). 
 
 Penggunaan adveksi - difusi 2 dimensi dapat diterapkan dalam bidang oseanografi, seperti menghitung dan memodelkan persebaran nutrien di laut atau sungai, pemodelan distribusi sedimen, menghitung dan memodelkan penyebaran polutan dari proses industri, mengetahui persebaran polutan dari laguna dengan menghitung input dan outputnya, serta mengetahui sebaran kebocoran minyak di laut.
 
-Script:
+_Script_ :
 ```java
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
-
-def percentage(part, whole):
+#%%
+def percentage (part, whole):
     percentage = 100 * float(part)/float(whole)
-    return str(round(percentage,2)) + "x"
+    return str(round(percentage,2)) + 'x'
 
-```
-Parameter yang tertera di bawah bisa diubah sesuai kebutuhan
-```java
-#Parameter Awal
-C = 0.21
-ad = 1.21
+#Masukan Parameter Awal
+C = 0
+ad = 1
+
+#Arah Arus
+#theta = 24
+#theta = 84
+#theta = 159
+theta = 339
 
 #Parameter Lanjutan
 q = 0.95
 x = 300
 y = 300
-dt = 0.5
 dx = 3
 dy = 3
 
-#Arah Arus
-theta = 21
-#theta = 81
-#theta = 156
-#theta = 336
-
 #Lama Simulasi
 Tend = 102
-#Tend = 1
+#Tend = 0,5
 dt = 0.5
 
 #Polutan
 px = 150
 py = 132
-Ic = 512
-```
-Rumus Perhitungan
-```java
+Ic = 542
+
 #Perhitungan U dan V
 u = C * np.sin(theta*np.pi/180)
 v = C * np.cos(theta*np.pi/180)
@@ -108,10 +107,8 @@ cfl = (2*ax + 2*ay + abs(lx) + abs(ly))  #syarat kestabilan CFL
 if cfl >= q:
     print('CFL Violated, please use dt :'+str(round(dt_count,4)))
     sys.exit ()
-```
 
-Pembuatan grid 
-```java
+#pembuatan grid 
 x_grid = np.linspace(0-dx, x+dx, Nx+2) #ghostnode boundary
 y_grid = np.linspace(0-dx, y+dy, Ny+2) #ghostnode boundary
 t = np.linspace(0, Tend, Nt+1)
@@ -137,10 +134,9 @@ for n in range (0, Nt):
     F[n+1,:,0] = 0 #bc kiri
     F[n+1,Ny+1,:] = 0 #bc atas
     F[n+1,:,Nx+1] = 0 #bc kanan
-```
-Output Gambar
-```java
-plt.clf()
+    
+#Output Gambar
+    plt.clf()
     plt.pcolor(x_mesh, y_mesh, F[n+1, :, :], cmap = 'jet',shading='auto',edgecolor='k')
     cbar=plt.colorbar(orientation='vertical',shrink=0.95,extend='both')
     plt.clf()
@@ -148,7 +144,7 @@ plt.clf()
     cbar = plt.colorbar(orientation='vertical',shrink=0.95,extend='both')
     cbar.set_label(label='Concentration',size = 8)
     #plt.clim(0,100)
-    plt.title('Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi \n t='+str(round(dt*(n+1),3))+ ', Initial condition='+str(Ic),fontsize=10)
+    plt.title('Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi \n t='+str(round(dt*(n+1),3))+ ', Initial condition= '+str(Ic),fontsize=10)
     plt.xlabel('x_grid',fontsize=9)
     plt.ylabel('y_grid',fontsize=9)
     plt.axis([0, x, 0, y])
@@ -156,27 +152,169 @@ plt.clf()
     plt.savefig(str(n+1)+'.jpg', dpi=300)
     plt.pause(0.01)
     plt.close()
-    print('running timestep ke:' +str(n+1) + ' dari:' +str(Nt) + '('+ percentage(n+1,Nt)+')')
+    print('running timestep ke: ' +str(n+1) + ' dari: ' +str(Nt) + '('+ percentage(n+1,Nt)+')')
     print('Nilai CFL:' +str(cfl) + 'dengan arah: ' +str(theta))
-    
-   # Hasil Pemodelan
-```![image](https://user-images.githubusercontent.com/105967316/169968654-4236961e-2b72-4174-ae29-4cabf5ef9cb2.png)
+```
+# Hasil _Script_ Adveksi - Difusi 2 Dimensi
 
-Contoh Hasil Script Adveksi - Difusi 2 Dimensi
+Videonya
 
-video kali ya
-
-# **MODUL 3 : Hidrodinamika 1 Dimensi**
+***
+# 👾 MODUL 3 : Hidrodinamika 1 Dimensi
 Pada modul 3 dipelajari mengenai persamaan Hidrodinamika 1D. Hidrodinamika adalah ilmu yang mempelajari gerak fluida, khususnya zat cair yang tidak dapat ditekan (_incompressible liquid_) yang dipengaruhi oleh gaya eksternal dan internal. Gaya-gaya yang mempengaruhi pada laut meliputi gaya gravitasi, coriolis, dan sebagainya. Kondisi hidrodinamika merupakan salah satu aspek yang sangat berpengaruh terhadap proses - proses yang terjadi di pantai terutama gelombang dan arus yang bergantung pada bentuk dan karakteristik pantai. Pada praktikum ini persamaan yang digunakan untuk modul hidrodinamika adalah persamaan momentum dan persamaan kontinuitas.
 
-`import numpy as np`
+_Script_ :
+```java
+import matplotlib.pyplot as plt
+import numpy as np
 
-# Hasil Pemodelan Modul 3
+#------------------------------------------------------------------------------------#
+#-----------------------------------Proses Awal--------------------------------------#
+#------------------------------------------------------------------------------------#
 
-# **MODUL 4 : Model Data Gelombang _National Buoy Data Center_ (NDBC)**
+P = 7500      #Panjang Grid
+T = 2000      #Waktu Simulasi
+A = 0.1       #Amplitudo
+D = 5         #Kedalaman
+dt = 2 
+dx = 100
+To = 500      #Periode
+
+g = 9.8
+pi = np.pi
+C = np.sqrt(g*D)  #Kecepatan Arus
+s = 2*pi/To       #Kecepatan Sudut Gelombang
+L = C*To          #Panjang Gelombang
+k = 2*pi/L        #Koefisien Panjang Gelombang
+Mmax = int(P//dx)
+Nmax = int(T//dt)
+
+zo = [None for _ in range(Mmax)]
+uo = [None for _ in range(Mmax)]
+
+hasilu = [None for _ in range(Nmax)]
+hasilz = [None for _ in range(Nmax)]
+
+for i in range(1, Mmax+1):
+    zo[i-1] = A*np.cos(k*(1)*dx)
+    uo[i-1] = A*C*np.cos(k*((i)*dx+(0.5)*dx))/(D+zo[i-1])
+for i in range(1, Nmax+1):
+    zb = [None for _ in range(Mmax)]
+    ub = [None for _ in range(Mmax)]
+    zb[0] = A*np.cos(s*(i)*dt)
+    ub[-1] = A*C*np.cos(k*L-s*(i)*dt)/(D+zo[-1])
+    for j in range(1, Mmax):
+        ub[j-1] = uo[j-1]-g*(dt/dx)*(zo[j]-zo[j-1])
+    for k in range(2, Mmax+1):
+        zb[k-1] = zo[k-1]-(D+zo[k-1])*(dt/dx)*(ub[k-1]-ub[k-2])
+        hasilu[i-1] = ub
+        hasilz[i-1] = zb
+    for p in range(0, Mmax):
+        uo[p] = ub[p]
+        zo[p] = zb[p]
+        
+#------------------------------------------------------------------------------------#
+#----------------------------------Pembuatan Grafik----------------------------------#
+#------------------------------------------------------------------------------------#
+
+def rand_col_hex_string():
+    return f'#{format(np.random.randint(0,16777215), "#08x")[2:]}'
+                      
+hasilu_np = np.array(hasilu)
+hasilz_np = np.array(hasilz)
+                      
+fig0, ax0 = plt.subplots(figsize=(12,8))
+for i in range(1, 16):
+    col0 = rand_col_hex_string()
+    line, = ax0.plot(hasilu_np[:,i-1], c=col0, label=f'n={i}')
+    ax0.legend()
+                      
+    ax0.set(xlabel='Waktu', ylabel='Kecepatan Arus',
+            title=''' Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi
+            Perubahan Kecepatan Arus Dalam Grid Tertentu di Sepanjang Waktu''')                  
+    ax0.grid()      
+                      
+fig1, ax1 = plt.subplots(figsize=(12,8))
+for i in range(1, 16):
+    col1 = rand_col_hex_string()
+    line, = ax1.plot(hasilz_np[:,i-1], c=col1, label=f'n={i}')
+    ax1.legend()
+                      
+    ax1.set(xlabel='Waktu', ylabel='Elevasi Muka Air',
+            title=''' Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi
+            Perubahan Elevasi Permukaan Air Dalam Grid Tertentu di Sepanjang Waktu''')
+    ax1.grid()
+                      
+fig2, ax2 = plt.subplots(figsize=(12,8))
+for i in range(1, 16):
+    col2 = rand_col_hex_string()
+    line, = ax2.plot(hasilu_np[i-1], c=col2, label=f't={i}')
+    ax2.legend()
+                      
+    ax2.set(xlabel='Grid', ylabel='Kecepatan Arus',
+            title=''' Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi
+            Perubahan Kecepatan Arus Dalam Waktu Tertentu di Sepanjang Grid''')
+    ax2.grid()
+                      
+fig3, ax3 = plt.subplots(figsize=(12,8))
+for i in range(1, 16):
+    col3 = rand_col_hex_string()
+    line, = ax3.plot(hasilz_np[i-1], c=col3, label=f't={i}')
+    ax3.legend()
+                      
+    ax3.set(xlabel='Grid', ylabel='Elevasi Muka Air',
+            title=''' Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi
+            Perubahan Elevasi Permukaan Air Dalam Waktu Tertentu di Sepanjang Grid''')
+    ax3.grid()
+                      
+plt.show()
+```
+
+# Hasil _Script_ Hidrodinamika 1 Dimensi
+
+Hasilnya
+
+***
+# 👾 MODUL 4 : Model Data Gelombang _National Buoy Data Center_ (NDBC)
 Pada modul 4, kita perlu mengakses hasil pembagian Station_ID sesuai dengan NIM melalui website NDBC-NOAA dan menentukan serta menganalisis letak buoy. _National Data Buoy Center_ (NDBC) adalah bagian dari _National Oceanic and Atmospheric Administration_ (NOAA) _National Weather Service_ (NWS). Gelombang di laut memiliki pergerakan yang acak dan komplek, sehingga tinggi dan periode gelombang sulit untuk diukur dan dirumuskan secara akurat. Teknologi pemantauan gelombang laut telah berkembang selama 40 tahun terakhir. Wahana terapung seperti wave buoy telah digunakan secara luas di seluruh dunia untuk mengukur gelombang permukaan yaitu sebagai referensi atau validasi data ramalan. NDBC merancang, mengembangkan, mengoperasikan, dan memelihara jaringan pelampung pengumpul data dari stasiun yang ada di pesisir. Data parameter yang didapatkan di stasiun NDBC dapat digunakan salah satunya untuk mengetahui transportasi larva ikan pada suatu perairan. Selain itu juga dapat digunakan dalam penentuan daerah penangkapan ikan, penentuan navigasi, rute perjalanan kapal, dan lainnya. Grafik yang dihasilkan dari script modul 4 berupa Pressure [hPa], Wind Speed [m/s] dan Wind Direction [degC].
 
+_Script_ :
+```java
+import matplotlib.pyplot as plt
 
-# Hasil Pemodelan Modul 4
-![image](https://user-images.githubusercontent.com/105967038/169859582-b4f54bd9-6a0b-49c6-9a88-f0e6e9ba7ae2.png)
+from siphon.simplewebservice.ndbc import NDBC
 
+#-------------------------------------------------------------------------------------------#
+df = NDBC.realtime_observations('sesuai stasiun yang diinginkan') #Station ID
+df.head()
+
+#-------------------------------------------------------------------------------------------#
+fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(12, 10))
+ax2b = ax2.twinx()
+
+#Pressure
+ax1.plot(df['time'], df['pressure'], color='black')
+ax1.set_ylabel('Pressure [hPa]')
+fig.suptitle('Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi', fontsize = 18)
+
+#Wins speed, gust, direction
+ax2.plot(df['time'], df['wind_speed'], color='tab:olive')
+ax2.plot(df['time'], df['wind_gust'], color='tab:orange', linestyle='--')
+ax2b.plot(df['time'], df['wind_direction'], color='tab:blue', linestyle='-')
+ax2.set_ylabel('Wind Speed [m/s]')
+ax2b.set_ylabel('Wind Direction')
+
+#Water temperature
+ax3.plot(df['time'], df['water_temperature'], color='tab:brown')
+ax3.set_ylabel('Water Temperature [degC]')
+
+plt.show()
+```
+# Hasil _Script_ Model Data Gelombang _National Buoy Data Center_ (NDBC)
+
+![image](https://user-images.githubusercontent.com/105962770/169971863-1a24c41e-7b19-4a4a-a1e5-d496011eb1b6.png)
+
+***
+# REFERENSI
+1. https://www.youtube.com/watch?v=UM0o0ToluY8&ab_channel=CasparHewett (Adveksi - Difusi)
+2. 
