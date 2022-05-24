@@ -160,7 +160,8 @@ plt.clf()
     print('Nilai CFL:' +str(cfl) + 'dengan arah: ' +str(theta))
     
    # Hasil Pemodelan
-```
+```![image](https://user-images.githubusercontent.com/105967316/169968654-4236961e-2b72-4174-ae29-4cabf5ef9cb2.png)
+
 Contoh Hasil Script Adveksi - Difusi 2 Dimensi
 
 video kali ya
