@@ -1,5 +1,5 @@
 # 🔹 **Tugas Akhir Praktikum Pemodelan Oseanografi** 🔹
-Repositori ini dibuat untuk memenuhi Tugas Akhir Praktikum Pemodelan Oseanografi. Repositori berisi _script_ pemrograman yang digunakan dalam praktikum yaitu Adveksi-Difusi 1 Dimensi, Adveksi-Difusi 2 Dimensi, Hidrodinamika 1 Dimensi, dan  Model Data Gelombang _National Buoy Data Center_ (NDBC). Bahasa pemrograman yang digunakan adalah _Python_ yang dapat diaplikasikan pada beberapa _platform_ seperti _Google Colaboratory_ dan _Jupyter Notebook_. _Library_ yang digunakan pada kesempatan kali ini adalah _Numpy_, _Matplotlib_, _sys_, dan _Siphon_.
+Repositori ini dibuat untuk memenuhi Tugas Akhir Praktikum Pemodelan Oseanografi. Repositori berisi _script_ pemrograman yang digunakan dalam praktikum yaitu Adveksi-Difusi 1 Dimensi, Adveksi-Difusi 2 Dimensi, Hidrodinamika 1 Dimensi, dan  Model Data Gelombang _National Buoy Data Center_ (NDBC). Bahasa pemrograman yang digunakan adalah _Python_ yang dapat diaplikasikan pada beberapa _platform_ seperti _Google Colaboratory_, _Visual Studio Code_ (VSC), dan _Jupyter Notebook_. _Library_ yang digunakan pada kesempatan kali ini adalah _Numpy_, _Matplotlib_, _sys_, dan _Siphon_.
 
 # Kenalan Dulu Yuk! 👋
 Kelompok 15 :
@@ -400,7 +400,7 @@ plt.show()
 > Hasil dari _running script_ modul 4 dapat berbeda dengan fenomena yang terjadi sebenarnya (karena adanya anomali)
 
 ***
-# Demikian Tugas Akhir Kelompok Praktikum Pemodelan Oseanografi ini kami buat, kami meminta maaf jika ada kesalahan dalam penulisan ataupun hasil script yang dibuat. Akhir kata kami ucapkan terima kasih kepada setiap orang yang terlibat dalam pembuatan tugas akhir ini. 👋👽
+# Demikian Tugas Akhir Kelompok Praktikum Pemodelan Oseanografi ini kami buat, kami meminta maaf jika ada kesalahan dalam penulisan ataupun hasil script yang dibuat. Akhir kata kami ucapkan terima kasih kepada setiap orang yang terlibat dalam pembuatan tugas akhir ini. Byee 👋👽
 
 ***
 # Tautan
