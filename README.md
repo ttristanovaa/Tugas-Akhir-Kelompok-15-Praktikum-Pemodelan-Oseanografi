@@ -29,7 +29,11 @@ Modul _sys_ digunakan untuk mengakses konfigurasi interpreter pada saat runtime 
 👩‍💻 _Siphon_ (https://unidata.github.io/siphon/latest/installguide.html)
 
 _Siphon_ adalah kumpulan utilitas Python untuk mengunduh data dari layanan data jarak jauh. Dalam kesempatan kali ini data jarak jauh yang digunakan adalah data NDBC.
-    
+
+_Install library_ dilakukan menggunakan miniconda
+
+![WhatsApp Image 2022-05-24 at 19 38 20](https://user-images.githubusercontent.com/105962770/170037069-958f056a-b017-4fc1-aa91-2f3742b7c7c4.jpeg)
+
 ***
 # 👾 MODUL 1 : Adveksi-Difusi 1 Dimensi
 Adveksi  - Difusi merupakan proses transportasi materi dari suatu bagian sistem ke bagian yang lain sebagai hasil dari gerakan molekul acak yang melibatkan proses transportasi fluida dalam bentuk aliran rata – rata atau arus yang dipengaruhi oleh gaya gravitasi atau tekanan dan merupakan gerak horizontal. Model adveksi - difusi dapat ditemukan dalam kehidupan sehari-hari seperti pencemaran sungai maupun kebakaran hutan. Adveksi - difusi merupakan suatu persamaan diferensial parsial. Solusi numerik dari Persamaan adveksi - difusi 1D dapat diselesaikan menggunakan Finite Difference Schemes standar dan non-standar. Metode yang dapat digunakan adalah metode _Backward in Time Central in Space_ (BTCS), metode _Forward in Time Central in Space_ (FTCS) dan terakhir metode Crank-Nicholson. 
@@ -206,17 +210,17 @@ Ic = 542
 
 # Hasil _Script_ Adveksi - Difusi 2 Dimensi
 
-> _Running Timestamp_ 1 dari 204
-> 
-> ![image](https://user-images.githubusercontent.com/105962770/170028110-73bb8ee5-70a7-49c4-9c47-ae50f19ce6f2.png)
+* **_Running Timestamp_ 1 dari 204**
+ 
+![image](https://user-images.githubusercontent.com/105962770/170028110-73bb8ee5-70a7-49c4-9c47-ae50f19ce6f2.png)
 
-> _Running Timestamp_ 102 dari 2014
-> 
-> ![image](https://user-images.githubusercontent.com/105962770/170028233-251938fe-ceb7-446f-8a41-5a0b0fe42980.png)
+* **_Running Timestamp_ 102 dari 2014**
 
-> _Running_ _Timestamp_ 204 dari 204
->
-> ![image](https://user-images.githubusercontent.com/105962770/170028315-9302fc80-3306-405b-9bb1-628706c30cd5.png)
+![image](https://user-images.githubusercontent.com/105962770/170028233-251938fe-ceb7-446f-8a41-5a0b0fe42980.png)
+
+* **_Running_ _Timestamp_ 204 dari 204**
+
+![image](https://user-images.githubusercontent.com/105962770/170028315-9302fc80-3306-405b-9bb1-628706c30cd5.png)
 
 > Jika timestamp yang diinginkan adalah 204 maka akan ada 204 hasil script, oleh karena itu kami hanya mencantumkan 3 contoh _running script_ modul 2
 
@@ -335,25 +339,25 @@ To = 500        #Periode
 
 # Hasil _Script_ Hidrodinamika 1 Dimensi
 
-> Kecepatan Arus Terhadap Waktu
->
-> ![a](https://user-images.githubusercontent.com/105962770/170031416-48e51c44-5b1e-4a6e-8600-edbfb1e0c8a7.png)
+* **Kecepatan Arus Terhadap Waktu**
 
-> Elevasi Muka Air Terhadap Waktu
-> 
-> ![b](https://user-images.githubusercontent.com/105962770/170031451-04ff3080-76c0-4806-9c01-c50a313ad264.png)
+![a](https://user-images.githubusercontent.com/105962770/170031416-48e51c44-5b1e-4a6e-8600-edbfb1e0c8a7.png)
 
-> Kecepatan Arus Terhadap Grid
-> 
-> ![c](https://user-images.githubusercontent.com/105962770/170031504-6154e9fc-1804-4d65-8d95-ec023a1c5365.png)
+* **Elevasi Muka Air Terhadap Waktu**
+ 
+![b](https://user-images.githubusercontent.com/105962770/170031451-04ff3080-76c0-4806-9c01-c50a313ad264.png)
 
-> Elevasi Muka Air Terhadap Grid
->
-> ![d](https://user-images.githubusercontent.com/105962770/170031550-29a00ab2-b046-4aad-8927-4bee0b47d64a.png)
+* **Kecepatan Arus Terhadap Grid**
+
+![c](https://user-images.githubusercontent.com/105962770/170031504-6154e9fc-1804-4d65-8d95-ec023a1c5365.png)
+
+* **Elevasi Muka Air Terhadap Grid**
+
+![d](https://user-images.githubusercontent.com/105962770/170031550-29a00ab2-b046-4aad-8927-4bee0b47d64a.png)
 
 ***
 # 👾 MODUL 4 : Model Data Gelombang _National Buoy Data Center_ (NDBC)
-Pada modul 4, kita perlu mengakses hasil pembagian Station_ID sesuai dengan NIM melalui website NDBC-NOAA dan menentukan serta menganalisis letak buoy. _National Data Buoy Center_ (NDBC) adalah bagian dari _National Oceanic and Atmospheric Administration_ (NOAA) _National Weather Service_ (NWS). Gelombang di laut memiliki pergerakan yang acak dan komplek, sehingga tinggi dan periode gelombang sulit untuk diukur dan dirumuskan secara akurat. Teknologi pemantauan gelombang laut telah berkembang selama 40 tahun terakhir. Wahana terapung seperti _wave buoy_ telah digunakan secara luas di seluruh dunia untuk mengukur gelombang permukaan yaitu sebagai referensi atau validasi data ramalan. NDBC merancang, mengembangkan, mengoperasikan, dan memelihara jaringan pelampung pengumpul data dari stasiun yang ada di pesisir. Data parameter yang didapatkan di stasiun NDBC dapat digunakan salah satunya untuk mengetahui transportasi larva ikan pada suatu perairan. Selain itu juga dapat digunakan dalam penentuan daerah penangkapan ikan, penentuan navigasi, rute perjalanan kapal, dan lainnya. Grafik yang dihasilkan dari script modul 4 berupa _Pressure_ [hPa], _Wind Speed_ [m/s] dan_ Wind Direction_ [degC].
+Pada modul 4, kita perlu mengakses hasil pembagian Station_ID sesuai dengan NIM melalui website NDBC-NOAA dan menentukan serta menganalisis letak buoy. _National Data Buoy Center_ (NDBC) adalah bagian dari _National Oceanic and Atmospheric Administration_ (NOAA) _National Weather Service_ (NWS). Gelombang di laut memiliki pergerakan yang acak dan komplek, sehingga tinggi dan periode gelombang sulit untuk diukur dan dirumuskan secara akurat. Teknologi pemantauan gelombang laut telah berkembang selama 40 tahun terakhir. Wahana terapung seperti _wave buoy_ telah digunakan secara luas di seluruh dunia untuk mengukur gelombang permukaan yaitu sebagai referensi atau validasi data ramalan. NDBC merancang, mengembangkan, mengoperasikan, dan memelihara jaringan pelampung pengumpul data dari stasiun yang ada di pesisir. Data parameter yang didapatkan di stasiun NDBC dapat digunakan salah satunya untuk mengetahui transportasi larva ikan pada suatu perairan. Selain itu juga dapat digunakan dalam penentuan daerah penangkapan ikan, penentuan navigasi, rute perjalanan kapal, dan lainnya. Grafik yang dihasilkan dari script modul 4 berupa _Pressure_ [hPa], _Wind Speed_ [m/s] dan _Wind Direction_ [degC].
 
 _Script_ :
 ```java
