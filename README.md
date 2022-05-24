@@ -1,4 +1,4 @@
-# **Tugas Akhir Praktikum Pemodelan Oseanografi** 
+# 🔹 **Tugas Akhir Praktikum Pemodelan Oseanografi** 🔹
 Repositori ini dibuat untuk memenuhi Tugas Akhir Praktikum Pemodelan Oseanografi. Repositori berisi _script_ pemrograman yang digunakan dalam praktikum yaitu Adveksi-Difusi 1 Dimensi, Adveksi-Difusi 2 Dimensi, Hidrodinamika 1 Dimensi, dan  Model Data Gelombang _National Buoy Data Center_ (NDBC). Bahasa pemrograman yang digunakan adalah _Python_ yang dapat diaplikasikan pada beberapa _platform_ seperti _Google Colaboratory_ dan _Jupyter Notebook_. _Library_ yang digunakan pada kesempatan kali ini adalah _Numpy_, _Matplotlib_, _sys_, dan _Siphon_.
 
 # Kenalan Dulu Yuk! 👋
@@ -11,16 +11,34 @@ Kelompok 15 :
 6. Nadhifa Az Zahra Oseanografi B
 7. Tanya Tristanova 26050120130042 Oseanografi A
 
+***
+**_Mandatory Library_ yang diperlukan :**
 
+👩‍💻 _Matplotlib_ (https://pypi.org/project/matplotlib/)
+    
+_Matplotlib_ adalah _library Python_ yang fokus pada visualisasi data seperti membuat plot grafik. _Matplotlib_ dapat digunakan dalam skrip _Python_, _Python_ dan _IPython shell_, server aplikasi web, dan beberapa _toolkit graphical user interface_ (GUI) lainnya.
+
+👩‍💻 _NumPy_ (https://numpy.org/install/)
+
+_NumPy_ (_Numerical Python_) adalah _library_ _Python_ yang fokus pada _scientific computing_. _NumPy_ memiliki kemampuan untuk membentuk objek N-dimensional array, yang mirip dengan list pada _Python_. Keunggulan _NumPy_ _array_ dibandingkan dengan list pada _Python_ adalah konsumsi memori yang lebih kecil serta runtime yang lebih cepat. NumPy juga memudahkan kita pada Aljabar Linear, terutama operasi pada Vector (1-d _array_) dan Matrix (2-d _array_).
+
+👩‍💻 _sys_ (https://www.codegrepper.com/code-examples/shell/pip+install+sys)
+
+Modul _sys_ digunakan untuk mengakses konfigurasi interpreter pada saat runtime dan berinteraksi dengan environment sistem operasi.
+
+👩‍💻 _Siphon_ (https://unidata.github.io/siphon/latest/installguide.html)
+
+_Siphon_ adalah kumpulan utilitas Python untuk mengunduh data dari layanan data jarak jauh. Dalam kesempatan kali ini data jarak jauh yang digunakan adalah data NDBC.
+    
 ***
 # 👾 MODUL 1 : Adveksi-Difusi 1 Dimensi
 Adveksi  - Difusi merupakan proses transportasi materi dari suatu bagian sistem ke bagian yang lain sebagai hasil dari gerakan molekul acak yang melibatkan proses transportasi fluida dalam bentuk aliran rata – rata atau arus yang dipengaruhi oleh gaya gravitasi atau tekanan dan merupakan gerak horizontal. Model adveksi - difusi dapat ditemukan dalam kehidupan sehari-hari seperti pencemaran sungai maupun kebakaran hutan. Adveksi - difusi merupakan suatu persamaan diferensial parsial. Solusi numerik dari Persamaan adveksi - difusi 1D dapat diselesaikan menggunakan Finite Difference Schemes standar dan non-standar. Metode yang dapat digunakan adalah metode _Backward in Time Central in Space_ (BTCS), metode _Forward in Time Central in Space_ (FTCS) dan terakhir metode Crank-Nicholson. 
 > Metode Crank-Nicholson mampu memprediksi hasil yang paling akurat dibanding dengan metode lainnya.
 
+# Persamaan yang digunakan :
 * **Persamaan Adveksi Difusi** : Persamaan adveksi-difusi merupakan persamaan yang memuat sifat persamaan adveksi dan persamaa difusi. Persamaan adveksi merupakan suatu persamaan gelombang linear orde satu dan termasuk dalam persamaan diferensial hiperbolik yang menggambarkan mekanisme transportasi suatu gas atau zat cair dengan arah terntentu. Sedangkan persamaan difusi merupakan persamaan diferensial parsial yang merupakan persentasi perpindahan suatu zat dari konsentrasi tinggi ke konsentrasi rendah. Persamaan adveksi-difusi dapat dipahami dalam bentuk persamaan adveksi maupun persamaan difusi.
 
 Persamaan Adeveksi  : ![image](https://user-images.githubusercontent.com/105962770/169956549-b9cf729b-2b25-4f29-93ca-ab3b012f028c.png)
-
 Persamaan Difusi    : ![image](https://user-images.githubusercontent.com/105962770/169956718-6d899167-6010-487e-9416-c185bd008dbe.png)
 
 * **Persamaan Laplace**
@@ -319,3 +337,4 @@ plt.show()
 # REFERENSI
 1. Materi Adveksi - Difusi https://www.youtube.com/watch?v=UM0o0ToluY8&ab_channel=CasparHewett
 2. Panduan GitHub https://github.com/endymuhardin/buku-pandoc/blob/master/buku/02-markdown.md
+3. NDBC https://www.ndbc.noaa.gov/
