@@ -1,5 +1,5 @@
 # **Tugas Akhir Praktikum Pemodelan Oseanografi** 
-Repositori ini dibuat untuk memenuhi Tugas Akhir Praktikum Pemodelan Oseanografi. Repositori berisi _script_ pemrograman yang digunakan dalam praktikum yaitu Adveksi-Difusi 1 Dimensi, Adveksi-Difusi 2 Dimensi, Hidrodinamika 1 Dimensi, dan  Model Data Gelombang _National Buoy Data Center_ (NDBC). Bahasa pemrograman yang digunakan adalah _Python_ yang dapat diaplikasikan pada beberapa _platform_ seperti _Google Colaboratory_ dan _Jupyter Notebook_. _Library_ yang digunakan pada kesempatan kali ini adalah _Numpy_, _Matplotlib_, dan _Siphon_.
+Repositori ini dibuat untuk memenuhi Tugas Akhir Praktikum Pemodelan Oseanografi. Repositori berisi _script_ pemrograman yang digunakan dalam praktikum yaitu Adveksi-Difusi 1 Dimensi, Adveksi-Difusi 2 Dimensi, Hidrodinamika 1 Dimensi, dan  Model Data Gelombang _National Buoy Data Center_ (NDBC). Bahasa pemrograman yang digunakan adalah _Python_ yang dapat diaplikasikan pada beberapa _platform_ seperti _Google Colaboratory_ dan _Jupyter Notebook_. _Library_ yang digunakan pada kesempatan kali ini adalah _Numpy_, _Matplotlib_, _sys_, dan _Siphon_.
 
 # Kenalan Dulu Yuk! 👋
 Kelompok 15 :
@@ -10,6 +10,7 @@ Kelompok 15 :
 5. Muhamad Fadilah Nur Hafid Oseanografi B
 6. Nadhifa Az Zahra Oseanografi B
 7. Tanya Tristanova 26050120130042 Oseanografi A
+
 
 ***
 # 👾 MODUL 1 : Adveksi-Difusi 1 Dimensi
@@ -316,5 +317,5 @@ plt.show()
 
 ***
 # REFERENSI
-1. https://www.youtube.com/watch?v=UM0o0ToluY8&ab_channel=CasparHewett (Adveksi - Difusi)
-2. 
+1. Materi Adveksi - Difusi https://www.youtube.com/watch?v=UM0o0ToluY8&ab_channel=CasparHewett
+2. Panduan GitHub https://github.com/endymuhardin/buku-pandoc/blob/master/buku/02-markdown.md
