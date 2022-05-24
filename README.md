@@ -32,7 +32,7 @@ _Siphon_ adalah kumpulan utilitas Python untuk mengunduh data dari layanan data 
     
 ***
 # 👾 MODUL 1 : Adveksi-Difusi 1 Dimensi
-Adveksi  - Difusi merupakan proses transportasi materi dari suatu bagian sistem ke bagian yang lain sebagai hasil dari gerakan molekul acak yang melibatkan proses transportasi fluida dalam bentuk aliran rata – rata atau arus yang dipengaruhi oleh gaya gravitasi atau tekanan dan merupakan gerak horizontal. Model adveksi - difusi dapat ditemukan dalam kehidupan sehari-hari seperti pencemaran sungai maupun kebakaran hutan. Adveksi - difusi merupakan suatu persamaan diferensial parsial. Solusi numerik dari Persamaan adveksi - difusi 1D dapat diselesaikan menggunakan _Finite Difference Schemes standar_ dan non-standar. Metode yang dapat digunakan adalah metode _Backward in Time Central in Space_ (BTCS), metode _Forward in Time Central in Space_ (FTCS) dan terakhir metode Crank-Nicholson. 
+Adveksi  - Difusi merupakan proses transportasi materi dari suatu bagian sistem ke bagian yang lain sebagai hasil dari gerakan molekul acak yang melibatkan proses transportasi fluida dalam bentuk aliran rata – rata atau arus yang dipengaruhi oleh gaya gravitasi atau tekanan dan merupakan gerak horizontal. Model adveksi - difusi dapat ditemukan dalam kehidupan sehari-hari seperti pencemaran sungai maupun kebakaran hutan. Adveksi - difusi merupakan suatu persamaan diferensial parsial. Solusi numerik dari Persamaan adveksi - difusi 1D dapat diselesaikan menggunakan Finite Difference Schemes standar dan non-standar. Metode yang dapat digunakan adalah metode _Backward in Time Central in Space_ (BTCS), metode _Forward in Time Central in Space_ (FTCS) dan terakhir metode Crank-Nicholson. 
 > Metode Crank-Nicholson mampu memprediksi hasil yang paling akurat dibanding dengan metode lainnya.
 
 # Persamaan yang digunakan :
@@ -194,7 +194,7 @@ dx = 3
 dy = 3
 
 #Lama Simulasi
-Tend = 102
+Tend = 102 - Timestamp yang bisa diubah-ubah
 #Tend = 0,5
 dt = 0.5
 
@@ -206,38 +206,49 @@ Ic = 542
 
 # Hasil _Script_ Adveksi - Difusi 2 Dimensi
 
-Hasilnya
+> _Running Timestamp_ 1 dari 204
+> 
+> ![image](https://user-images.githubusercontent.com/105962770/170028110-73bb8ee5-70a7-49c4-9c47-ae50f19ce6f2.png)
+
+> _Running Timestamp_ 102 dari 2014
+> 
+> ![image](https://user-images.githubusercontent.com/105962770/170028233-251938fe-ceb7-446f-8a41-5a0b0fe42980.png)
+
+> _Running_ _Timestamp_ 204 dari 204
+>
+> ![image](https://user-images.githubusercontent.com/105962770/170028315-9302fc80-3306-405b-9bb1-628706c30cd5.png)
+
+> Jika timestamp yang diinginkan adalah 204 maka akan ada 204 hasil script, oleh karena itu kami hanya mencantumkan 3 contoh _running script_ modul 2
 
 ***
 # 👾 MODUL 3 : Hidrodinamika 1 Dimensi
-Pada modul 3 mempelajari mengenai persamaan Hidrodinamika 1D. Hidrodinamika adalah cabang dari mekanika fluida. Hidrodimanika adalah ilmu yang mempelajari gerak fluida, khususnya zat cair yang tidak dapat ditekan (_incompressible liquid_) yang dipengaruhi oleh gaya eksternal dan internal. Gaya-gaya yang mempengaruhi pada laut meliputi gaya gravitasi, coriolis, dan sebagainya. Kondisi hidrodinamika merupakan salah satu aspek yang sangat berpengaruh terhadap proses - proses yang terjadi di pantai terutama gelombang dan arus yang bergantung pada bentuk dan karakteristik pantai. Dalam oseanografi, mekanika fluida digunakan berdasarkan mekanika Newton yang dimodifikasi dengan memperhitungkan turbelensi. Fenomena arus, gelombang dan pasang surut merupakan bagian dari hidrodinamikalaut. Parameter hidrodinamika laut ini merupakan bagian dari keseluruhan komponenoseanografi yang saling mengadakan interaksi atau saling mempengaruhi satu sama lainyang cukup kompleks. Pada praktikum ini persamaan yang digunakan untuk modul hidrodinamika adalah persamaan momentum dan persamaan kontinuitas.
+Pada modul 3 dipelajari mengenai persamaan Hidrodinamika 1D. Hidrodinamika adalah ilmu yang mempelajari gerak fluida, khususnya zat cair yang tidak dapat ditekan (_incompressible liquid_) yang dipengaruhi oleh gaya eksternal dan internal. Gaya-gaya yang mempengaruhi pada laut meliputi gaya gravitasi, coriolis, dan sebagainya. Kondisi hidrodinamika merupakan salah satu aspek yang sangat berpengaruh terhadap proses - proses yang terjadi di pantai terutama gelombang dan arus yang bergantung pada bentuk dan karakteristik pantai. Pada praktikum ini persamaan yang digunakan untuk modul hidrodinamika adalah persamaan momentum dan persamaan kontinuitas.
 
 _Script_ :
 ```java
 import matplotlib.pyplot as plt
 import numpy as np
 
-#------------------------------------------------------------------------------------#
-#-----------------------------------Proses Awal--------------------------------------#
-#------------------------------------------------------------------------------------#
-
-P = 7500      #Panjang Grid
-T = 2000      #Waktu Simulasi
-A = 0.1       #Amplitudo
-D = 5         #Kedalaman
-dt = 2 
+#Proses Awal
+p = 7500        #Panjang Grid
+T = 2000        #Waktu Simulasi
+A = 0.1         #Amplitudo
+D = 5           #Depth/Kedalaman
+dt = 2
 dx = 100
-To = 500      #Periode
+To = 500        #Periode
 
-g = 9.8
-pi = np.pi
-C = np.sqrt(g*D)  #Kecepatan Arus
-s = 2*pi/To       #Kecepatan Sudut Gelombang
-L = C*To          #Panjang Gelombang
-k = 2*pi/L        #Koefisien Panjang Gelombang
-Mmax = int(P//dx)
+#Parameter Lanjutan
+g = 9.8          #Koefisien Gravitasi
+pi = np.pi 
+C = np.sqrt(g*D) #Kecepatan Arus
+s = 2*pi/To      #Kecepatan Sudut Gelombang
+L = C*To         #Panjang Gelombang
+k = 2*pi/L       #Koefisien Panjang Gelombang
+Mmax = int(p//dx)
 Nmax = int(T//dt)
 
+#Penyelesaian Persamaan Hidrodinamika 1D
 zo = [None for _ in range(Mmax)]
 uo = [None for _ in range(Mmax)]
 
@@ -245,93 +256,100 @@ hasilu = [None for _ in range(Nmax)]
 hasilz = [None for _ in range(Nmax)]
 
 for i in range(1, Mmax+1):
-    zo[i-1] = A*np.cos(k*(1)*dx)
-    uo[i-1] = A*C*np.cos(k*((i)*dx+(0.5)*dx))/(D+zo[i-1])
+  zo[i-1] = A*np.cos(k*(i)*dx)
+  uo[i-1] = A*C*np.cos(k*((i)*dx+(0.5)*dx))/(D+zo[i-1])
 for i in range(1, Nmax+1):
-    zb = [None for _ in range(Mmax)]
-    ub = [None for _ in range(Mmax)]
-    zb[0] = A*np.cos(s*(i)*dt)
-    ub[-1] = A*C*np.cos(k*L-s*(i)*dt)/(D+zo[-1])
-    for j in range(1, Mmax):
-        ub[j-1] = uo[j-1]-g*(dt/dx)*(zo[j]-zo[j-1])
-    for k in range(2, Mmax+1):
-        zb[k-1] = zo[k-1]-(D+zo[k-1])*(dt/dx)*(ub[k-1]-ub[k-2])
-        hasilu[i-1] = ub
-        hasilz[i-1] = zb
-    for p in range(0, Mmax):
-        uo[p] = ub[p]
-        zo[p] = zb[p]
-        
-#------------------------------------------------------------------------------------#
-#----------------------------------Pembuatan Grafik----------------------------------#
-#------------------------------------------------------------------------------------#
+  zb = [None for _ in range(Mmax)]
+  ub = [None for _ in range(Mmax)]
+  zb[0] = A*np.cos(s*(i)*dt)
+  ub[-1] = A*C*np.cos(k*L-s*(i)*dt)/(D+zo[-1])
+  for j in range (1, Mmax):
+    ub[j-1] = uo[j-1]-g*(dt/dx)*(zo[j]-zo[j-1])
+  for k in range(2, Mmax+1):
+    zb[k-1] = zo[k-1]-(D+zo[k-1])*(dt/dx)*(ub[k-1]-ub[k-2])
+    hasilu[i-1] = ub
+    hasilz[i-1] = zb
+  for p in range(0, Mmax):
+    uo[p] = ub[p]
+    zo[p] = zb[p]
 
+#Pembuatan Grafik
 def rand_col_hex_string():
-    return f'#{format(np.random.randint(0,16777215), "#08x")[2:]}'
-                      
+  return f'#{format(np.random.randint(0,16777215), "#08x")[2:]}'
+
 hasilu_np = np.array(hasilu)
 hasilz_np = np.array(hasilz)
-                      
+
 fig0, ax0 = plt.subplots(figsize=(12,8))
-for i in range(1, 16):
-    col0 = rand_col_hex_string()
-    line, = ax0.plot(hasilu_np[:,i-1], c=col0, label=f'n={i}')
-    ax0.legend()
-                      
-    ax0.set(xlabel='Waktu', ylabel='Kecepatan Arus',
-            title=''' Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi
-            Perubahan Kecepatan Arus Dalam Grid Tertentu di Sepanjang Waktu''')                  
-    ax0.grid()      
-                      
+for i in range (1, 16):
+  col0 = rand_col_hex_string()
+  line, = ax0.plot(hasilu_np[:,i-1], c=col0, label=f'n={i}')
+  ax0.legend()
+
+  ax0.set(xlabel='Waktu', ylabel='Kecepatan Arus', title='''Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi''')
+  ax0.grid()
+
 fig1, ax1 = plt.subplots(figsize=(12,8))
 for i in range(1, 16):
-    col1 = rand_col_hex_string()
-    line, = ax1.plot(hasilz_np[:,i-1], c=col1, label=f'n={i}')
-    ax1.legend()
-                      
-    ax1.set(xlabel='Waktu', ylabel='Elevasi Muka Air',
-            title=''' Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi
-            Perubahan Elevasi Permukaan Air Dalam Grid Tertentu di Sepanjang Waktu''')
-    ax1.grid()
-                      
+  col1= rand_col_hex_string()
+  line, = ax1.plot(hasilz_np[:,i-1], c=col1, label=f'n={i}')
+  ax1.legend()
+
+  ax1.set(xlabel='Waktu', ylabel='Elevasi Muka Air', 
+          title='''Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi''')
+  ax1.grid()
+
 fig2, ax2 = plt.subplots(figsize=(12,8))
 for i in range(1, 16):
-    col2 = rand_col_hex_string()
-    line, = ax2.plot(hasilu_np[i-1], c=col2, label=f't={i}')
-    ax2.legend()
-                      
-    ax2.set(xlabel='Grid', ylabel='Kecepatan Arus',
-            title=''' Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi
-            Perubahan Kecepatan Arus Dalam Waktu Tertentu di Sepanjang Grid''')
-    ax2.grid()
-                      
+  col2= rand_col_hex_string()
+  line, = ax2.plot(hasilu_np[i-1], c=col2, label=f't={i}')
+  ax2.legend()
+
+  ax2.set(xlabel='Grid', ylabel='Kecepatan Arus', 
+          title='''Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi''')
+          ax2.grid()
+
 fig3, ax3 = plt.subplots(figsize=(12,8))
 for i in range(1, 16):
-    col3 = rand_col_hex_string()
-    line, = ax3.plot(hasilz_np[i-1], c=col3, label=f't={i}')
-    ax3.legend()
-                      
-    ax3.set(xlabel='Grid', ylabel='Elevasi Muka Air',
-            title=''' Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi
-            Perubahan Elevasi Permukaan Air Dalam Waktu Tertentu di Sepanjang Grid''')
-    ax3.grid()
-                      
+  col3= rand_col_hex_string()
+  line, = ax3.plot(hasilz_np[i-1], c=col3, label=f't={i}')
+  ax3.legend()
+
+  ax3.set(xlabel='Grid', ylabel='Elevasi Muka Air', 
+          title='''Kelompok 15_Tugas Kelompok Praktikum Pemodelan Oseanografi''')
+  ax3.grid()
+
 plt.show()
 ```
+
 Parameter berikut dapat diubah sesuai dengan kebutuhan :
 ```
-P = 7500      #Panjang Grid
-T = 2000      #Waktu Simulasi
-A = 0.1       #Amplitudo
-D = 5         #Kedalaman
-dt = 2 
+p = 7500        #Panjang Grid
+T = 2000        #Waktu Simulasi
+A = 0.1         #Amplitudo
+D = 5           #Depth/Kedalaman
+dt = 2
 dx = 100
-To = 500      #Periode
+To = 500        #Periode
 ```
 
 # Hasil _Script_ Hidrodinamika 1 Dimensi
 
-Hasilnya
+> Kecepatan Arus Terhadap Waktu
+>
+> ![a](https://user-images.githubusercontent.com/105962770/170031416-48e51c44-5b1e-4a6e-8600-edbfb1e0c8a7.png)
+
+> Elevasi Muka Air Terhadap Waktu
+> 
+> ![b](https://user-images.githubusercontent.com/105962770/170031451-04ff3080-76c0-4806-9c01-c50a313ad264.png)
+
+> Kecepatan Arus Terhadap Grid
+> 
+> ![c](https://user-images.githubusercontent.com/105962770/170031504-6154e9fc-1804-4d65-8d95-ec023a1c5365.png)
+
+> Elevasi Muka Air Terhadap Grid
+>
+> ![d](https://user-images.githubusercontent.com/105962770/170031550-29a00ab2-b046-4aad-8927-4bee0b47d64a.png)
 
 ***
 # 👾 MODUL 4 : Model Data Gelombang _National Buoy Data Center_ (NDBC)
@@ -369,12 +387,23 @@ ax3.set_ylabel('Water Temperature [degC]')
 
 plt.show()
 ```
+
+> Stasiun pada script dapat dicari pada https://www.ndbc.noaa.gov/
+
 # Hasil _Script_ Model Data Gelombang _National Buoy Data Center_ (NDBC)
 
 ![image](https://user-images.githubusercontent.com/105962770/169971863-1a24c41e-7b19-4a4a-a1e5-d496011eb1b6.png)
+> Hasil dari _running script_ modul 4 dapat berbeda dengan fenomena yang terjadi sebenarnya (karena adanya anomali)
 
 ***
-# REFERENSI
+# Demikian Tugas Akhir Kelompok Praktikum Pemodelan Oseanografi ini kami buat, kami meminta maaf jika ada kesalahan dalam penulisan ataupun hasil script yang dibuat. Akhir kata kami ucapkan terima kasih kepada setiap orang yang terlibat dalam pembuatan tugas akhir ini. 👋👽
+
+***
+# TAUTAN
 1. Materi Adveksi - Difusi https://www.youtube.com/watch?v=UM0o0ToluY8&ab_channel=CasparHewett
 2. Panduan GitHub https://github.com/endymuhardin/buku-pandoc/blob/master/buku/02-markdown.md
 3. NDBC https://www.ndbc.noaa.gov/
+4. https://pypi.org/project/matplotlib/
+5. https://numpy.org/install/
+6. https://www.codegrepper.com/code-examples/shell/pip+install+sys
+7. https://unidata.github.io/siphon/latest/installguide.html
