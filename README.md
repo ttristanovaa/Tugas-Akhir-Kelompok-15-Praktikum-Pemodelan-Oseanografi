@@ -80,9 +80,9 @@ C = 0
 ad = 1
 
 #Arah Arus
-#theta = 24
-#theta = 84
-#theta = 159
+theta = 24
+theta = 84
+theta = 159
 theta = 339
 
 #Parameter Lanjutan
@@ -174,9 +174,39 @@ for n in range (0, Nt):
     print('running timestep ke: ' +str(n+1) + ' dari: ' +str(Nt) + '('+ percentage(n+1,Nt)+')')
     print('Nilai CFL:' +str(cfl) + 'dengan arah: ' +str(theta))
 ```
+Parameter berikut dapat diubah sesuai dengan kebutuhan :
+```
+#Masukan Parameter Awal
+C = 0
+ad = 1
+
+#Arah Arus
+theta = 24
+theta = 84
+theta = 159
+theta = 339
+
+#Parameter Lanjutan
+q = 0.95
+x = 300
+y = 300
+dx = 3
+dy = 3
+
+#Lama Simulasi
+Tend = 102
+#Tend = 0,5
+dt = 0.5
+
+#Polutan
+px = 150
+py = 132
+Ic = 542
+```
+
 # Hasil _Script_ Adveksi - Difusi 2 Dimensi
 
-Videonya
+Hasilnya
 
 ***
 # 👾 MODUL 3 : Hidrodinamika 1 Dimensi
@@ -287,6 +317,16 @@ for i in range(1, 16):
     ax3.grid()
                       
 plt.show()
+```
+Parameter berikut dapat diubah sesuai dengan kebutuhan :
+```
+P = 7500      #Panjang Grid
+T = 2000      #Waktu Simulasi
+A = 0.1       #Amplitudo
+D = 5         #Kedalaman
+dt = 2 
+dx = 100
+To = 500      #Periode
 ```
 
 # Hasil _Script_ Hidrodinamika 1 Dimensi
