@@ -70,7 +70,7 @@ Persamaan Adveksi - Difusi 2 Dimensi sering juga dikenal dengan Persamaan Transp
 Penggunaan adveksi - difusi 2 dimensi dapat diterapkan dalam bidang oseanografi, seperti menghitung dan memodelkan persebaran nutrien di laut atau sungai, pemodelan distribusi sedimen, menghitung dan memodelkan penyebaran polutan dari proses industri, mengetahui persebaran polutan dari laguna dengan menghitung input dan outputnya, serta mengetahui sebaran kebocoran minyak di laut.
 
 _Script_ :
-```java
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
@@ -260,7 +260,7 @@ Pada modul 3 dipelajari mengenai persamaan Hidrodinamika 1D. Hidrodinamika adala
 
 
 _Script_ :
-`'`java
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -391,7 +391,7 @@ To = 500        #Periode
 Pada modul 4, kita perlu mengakses hasil pembagian Station_ID sesuai dengan NIM melalui website NDBC-NOAA dan menentukan serta menganalisis letak buoy. _National Data Buoy Center_ (NDBC) adalah bagian dari _National Oceanic and Atmospheric Administration_ (NOAA) _National Weather Service_ (NWS). Gelombang di laut memiliki pergerakan yang acak dan komplek, sehingga tinggi dan periode gelombang sulit untuk diukur dan dirumuskan secara akurat. Teknologi pemantauan gelombang laut telah berkembang selama 40 tahun terakhir. Wahana terapung seperti _wave buoy_ telah digunakan secara luas di seluruh dunia untuk mengukur gelombang permukaan yaitu sebagai referensi atau validasi data ramalan. NDBC merancang, mengembangkan, mengoperasikan, dan memelihara jaringan pelampung pengumpul data dari stasiun yang ada di pesisir. Data parameter yang didapatkan di stasiun NDBC dapat digunakan salah satunya untuk mengetahui transportasi larva ikan pada suatu perairan. Selain itu juga dapat digunakan dalam penentuan daerah penangkapan ikan, penentuan navigasi, rute perjalanan kapal, dan lainnya. Grafik yang dihasilkan dari script modul 4 berupa _Pressure_ [hPa], _Wind Speed_ [m/s] dan _Wind Direction_ [degC].
 
 _Script_ :
-```java
+```python
 import matplotlib.pyplot as plt
 
 from siphon.simplewebservice.ndbc import NDBC
