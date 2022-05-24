@@ -396,6 +396,9 @@ plt.show()
 
 # Hasil _Script_ Model Data Gelombang _National Buoy Data Center_ (NDBC)
 
+# Salah satu contoh stasiun yang ada pada website noaa yaitu Station 41029 - Capers Nearshore, SC (CAP2)
+
+![image](https://drive.google.com/file/d/1mlMH2p6caT2iq3-Fs7tgF5cAukebbgCc/view?usp=sharing)
 ![image](https://user-images.githubusercontent.com/105962770/169971863-1a24c41e-7b19-4a4a-a1e5-d496011eb1b6.png)
 > Hasil dari _running script_ modul 4 dapat berbeda dengan fenomena yang terjadi sebenarnya (karena adanya anomali), anomali tersebut menggambarkan salah satu parameter yang diukur yaitu kecepatan angin, dimana kecepatan angin merupakan salah satu faktor yang mempengaruhi kecepatan arus dan besar gelombang
 
