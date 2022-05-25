@@ -214,7 +214,7 @@ Ic = 542
  
 ![image](https://user-images.githubusercontent.com/105962770/170028110-73bb8ee5-70a7-49c4-9c47-ae50f19ce6f2.png)
 
-* **_Running Timestamp_ 102 dari 2014**
+* **_Running Timestamp_ 102 dari 204**
 
 ![image](https://user-images.githubusercontent.com/105962770/170028233-251938fe-ceb7-446f-8a41-5a0b0fe42980.png)
 
