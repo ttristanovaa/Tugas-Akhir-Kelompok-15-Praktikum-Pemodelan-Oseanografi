@@ -36,7 +36,7 @@ _Install library_ dilakukan menggunakan miniconda
 
 ***
 # 👾 MODUL 1 : Adveksi-Difusi 1 Dimensi
-Adveksi  - Difusi merupakan proses transportasi materi dari suatu bagian sistem ke bagian yang lain sebagai hasil dari gerakan molekul acak yang melibatkan proses transportasi fluida dalam bentuk aliran rata – rata atau arus yang dipengaruhi oleh gaya gravitasi atau tekanan dan merupakan gerak horizontal. Model adveksi - difusi dapat ditemukan dalam kehidupan sehari-hari seperti pencemaran sungai maupun kebakaran hutan. Adveksi - difusi merupakan suatu persamaan diferensial parsial. Solusi numerik dari Persamaan adveksi - difusi 1D dapat diselesaikan menggunakan Finite Difference Schemes standar dan non-standar. Metode yang dapat digunakan adalah metode _Backward in Time Central in Space_ (BTCS), metode _Forward in Time Central in Space_ (FTCS) dan terakhir metode Crank-Nicholson. 
+Adveksi  - Difusi merupakan proses transportasi materi dari suatu bagian sistem ke bagian yang lain sebagai hasil dari gerakan molekul acak yang melibatkan proses transportasi fluida dalam bentuk aliran rata – rata atau arus yang dipengaruhi oleh gaya gravitasi atau tekanan dan merupakan gerak horizontal. Model adveksi - difusi dapat ditemukan dalam kehidupan sehari-hari seperti pencemaran sungai maupun kebakaran hutan. Adveksi - difusi merupakan suatu persamaan diferensial parsial. Solusi numerik dari Persamaan adveksi - difusi 1D dapat diselesaikan menggunakan _Finite Difference Schemes standar_ dan non-standar. Metode yang dapat digunakan adalah metode _Backward in Time Central in Space_ (BTCS), metode _Forward in Time Central in Space_ (FTCS) dan terakhir metode Crank-Nicholson. 
 > Metode Crank-Nicholson mampu memprediksi hasil yang paling akurat dibanding dengan metode lainnya.
 
 # Persamaan yang digunakan :
@@ -226,7 +226,7 @@ Ic = 542
 
 ***
 # 👾 MODUL 3 : Hidrodinamika 1 Dimensi
-Pada modul 3 dipelajari mengenai persamaan Hidrodinamika 1D. Hidrodinamika adalah ilmu yang mempelajari gerak fluida, khususnya zat cair yang tidak dapat ditekan (_incompressible liquid_) yang dipengaruhi oleh gaya eksternal dan internal. Gaya-gaya yang mempengaruhi pada laut meliputi gaya gravitasi, coriolis, dan sebagainya. Kondisi hidrodinamika merupakan salah satu aspek yang sangat berpengaruh terhadap proses - proses yang terjadi di pantai terutama gelombang dan arus yang bergantung pada bentuk dan karakteristik pantai. Pada praktikum ini persamaan yang digunakan untuk modul hidrodinamika adalah 
+Pada modul 3 dipelajari mengenai persamaan Hidrodinamika 1D. Hidrodinamika adalah ilmu yang mempelajari gerak fluida, khususnya zat cair yang tidak dapat ditekan (_incompressible liquid_) yang dipengaruhi oleh gaya eksternal dan internal. Gaya - gaya yang mempengaruhi pada laut meliputi gaya gravitasi, coriolis, dan sebagainya. Kondisi hidrodinamika merupakan salah satu aspek yang sangat berpengaruh terhadap proses - proses yang terjadi di pantai terutama gelombang dan arus yang bergantung pada bentuk dan karakteristik pantai. Parameter hidrodinamika laut ini merupakan bagian dari keseluruhan komponen oseanografi yang saling mengadakan interaksi atau saling mempengaruhi satu sama lainyang cukup kompleks. Pada praktikum ini persamaan yang digunakan untuk modul hidrodinamika adalah 
 
 **Persamaan Momentum**:
 
