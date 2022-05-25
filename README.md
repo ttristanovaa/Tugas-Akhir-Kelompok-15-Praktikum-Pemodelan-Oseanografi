@@ -228,31 +228,31 @@ Ic = 542
 # 👾 MODUL 3 : Hidrodinamika 1 Dimensi
 Pada modul 3 dipelajari mengenai persamaan Hidrodinamika 1D. Hidrodinamika adalah ilmu yang mempelajari gerak fluida, khususnya zat cair yang tidak dapat ditekan (_incompressible liquid_) yang dipengaruhi oleh gaya eksternal dan internal. Gaya - gaya yang mempengaruhi pada laut meliputi gaya gravitasi, coriolis, dan sebagainya. Kondisi hidrodinamika merupakan salah satu aspek yang sangat berpengaruh terhadap proses - proses yang terjadi di pantai terutama gelombang dan arus yang bergantung pada bentuk dan karakteristik pantai. Parameter hidrodinamika laut ini merupakan bagian dari keseluruhan komponen oseanografi yang saling mengadakan interaksi atau saling mempengaruhi satu sama lainyang cukup kompleks. Pada praktikum ini persamaan yang digunakan untuk modul hidrodinamika adalah 
 
-**Persamaan Momentum**:
+* **Persamaan Momentum**
 
 ![image](https://user-images.githubusercontent.com/105988579/170135922-d64ef5fe-d2d7-43c3-a034-603607e649f2.png)
 
-**Persamaan Kontinuitas**:
+* **Persamaan Kontinuitas**
 
 ![image](https://user-images.githubusercontent.com/105988579/170135996-bc5e2aba-3040-4e79-98a8-eca941c17543.png)
 
-**Persamaan Transport**
+* **Persamaan Transport**
 
 ![image](https://user-images.githubusercontent.com/105988579/170137143-dcf52915-a45e-4863-b87e-deee639e2422.png)
 
-**Persamaan Pembangun**
+* **Persamaan Pembangun**
 
 ![image](https://user-images.githubusercontent.com/105988579/170137178-6299ad29-928b-48b4-87b8-8175ba2135af.png)
 
 ![image](https://user-images.githubusercontent.com/105988579/170137201-e916fd76-b925-4e8f-bc51-81fe700f016f.png)
 
-**Diskretisasi Persamaan**
+* **Diskretisasi Persamaan**
 
 ![image](https://user-images.githubusercontent.com/105988579/170137390-9cf9cc1a-5693-4aae-859a-1f1303246e41.png)
 
 ![image](https://user-images.githubusercontent.com/105988579/170137418-f358c0e5-e8b6-45ae-aefb-f32c83f5b1a1.png)
 
-**Penyelesaian Analitik**
+* **Penyelesaian Analitik**
 
 ![image](https://user-images.githubusercontent.com/105988579/170137541-29424a4f-c14a-4cba-ae50-48328ff6e681.png)
 
@@ -424,12 +424,12 @@ plt.show()
 ```
 
 > Stasiun yang digunakan pada script dapat dicari pada https://www.ndbc.noaa.gov/
-# Salah satu contoh stasiun yang ada pada website noaa yaitu Station 41029 - Capers Nearshore, SC (CAP2)
+# Salah satu contoh stasiun yang ada pada website NOAA yaitu Station 41029 - Capers Nearshore, SC (CAP2)
 ![41029_mini (1)](https://user-images.githubusercontent.com/106136915/170044725-3b68af72-40a0-4795-bf35-f34184748653.jpg)
 # Hasil _Script_ Model Data Gelombang _National Buoy Data Center_ (NDBC)
 
 ![image](https://user-images.githubusercontent.com/105962770/169971863-1a24c41e-7b19-4a4a-a1e5-d496011eb1b6.png)
-> Hasil dari _running script_ modul 4 dapat berbeda dengan fenomena yang terjadi sebenarnya (karena adanya anomali), anomali tersebut menggambarkan salah satu parameter yang diukur yaitu kecepatan angin, dimana kecepatan angin merupakan salah satu faktor yang mempengaruhi kecepatan arus dan besar gelombang, sehingga station tidak secara langsung mengukur kecepatan arus atau beras gelombang
+> Hasil dari _running script_ modul 4 dapat berbeda dengan fenomena yang terjadi sebenarnya (karena adanya anomali). Anomali tersebut menggambarkan salah satu parameter yang diukur yaitu kecepatan angin, dimana kecepatan angin merupakan salah satu faktor yang mempengaruhi kecepatan arus dan besar gelombang, sehingga station tidak secara langsung mengukur kecepatan arus atau beras gelombang
 
 ***
 # Demikian Tugas Akhir Kelompok Praktikum Pemodelan Oseanografi ini kami buat, kami meminta maaf jika ada kesalahan dalam penulisan ataupun hasil script yang dibuat. Akhir kata kami ucapkan terima kasih kepada setiap orang yang terlibat dalam pembuatan tugas akhir ini. Byee 👋👽
